@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style>
+          .error {
+              color: red;
+          }
+      </style>
+
+    </head>
+
+    <body>
+
+    <div class="container">
+
+      <nav class="header">
+
+        <center><h1>Build a Blog</h1>
+        <a href="/blog">Main Page</a> | 
+        <a href="/newpost">New Post</a> | 
+        <a href="/blog?sort=oldest">Oldest</a> | 
+        <a href="/blog?sort=newest">Newest</a></nav></center>
+
+      </nav>
+      {% block content %}
+      {% endblock %}
+
+    </div>
+
+  </body>
+
+  </html>
